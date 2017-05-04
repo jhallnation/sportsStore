@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :models
   resources :categories, only: [:index, :show]
 
   resources :items
