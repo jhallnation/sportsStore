@@ -1,5 +1,6 @@
 <h1>Category#index</h1>
-
+<%= link_to 'Login', new_user_session_path %>
+<%= link_to link_to 'LogOut', destroy_user_session_path, method: :delete %>
 <%= @categories.inspect %>
 
 <hr>
