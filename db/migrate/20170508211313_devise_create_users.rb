@@ -32,7 +32,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
       t.string :name
       t.text :address
-      t.string :roles
+
 
       t.timestamps null: false
     end
