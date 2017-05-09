@@ -15,20 +15,18 @@
   <%= @item.price %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @item.image %>
-</p>
+<div>
+  <%= image_tag item_img(@item.image, 'main') %>
+</div>
 
 <p>
-  <strong>Thumb image:</strong>
-  <%= @item.thumb_image %>
+  <strong>category:</strong>
+  <%= @item.category %>
 </p>
+<% if logged_in?(:admin) %>
+  <div><%= link_to 'Edit', edit_item_path(@item) %></div>
+  <div><%= link_to 'New', new_item_path(@item) %></div>
+  <div><%= link_to 'Destroy', @item, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<% end %>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @item.quantity %>
-</p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
