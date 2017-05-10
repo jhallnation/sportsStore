@@ -1,6 +1,4 @@
-puts '15 items created'
-
-2.times do |category|
+3.times do |category|
   Category.create!(
     title: "Category #{category}"
     )
@@ -8,8 +6,8 @@ end
 
 puts '3 categories created'
 
-5.times do |item|
- Item.create!(title: "Nike #{item}", 
+50.times do |item|
+ Item.create!(title: "Shoe #{item}", 
             description: 'asdfasdf', 
             price: 10,  
             image: 'http://placehold.it/600x400',
@@ -18,8 +16,18 @@ puts '3 categories created'
             )
 end
 
-5.times do |item|
- Item.create!(title: "Nike #{item + 5}", 
+50.times do |item|
+ Item.create!(title: "Ball #{item}", 
+            description: 'asdfasdf', 
+            price: 10,  
+            image: 'http://placehold.it/600x400',
+            thumb_image: 'http://placehold.it/350x250',
+            category_id: Category.find(2).id
+            )
+end
+
+50.times do |item|
+ Item.create!(title: "Short #{item}", 
             description: 'asdfasdf', 
             price: 10,  
             image: 'http://placehold.it/600x400',
@@ -28,4 +36,5 @@ end
             )
 end
 
+puts '150 items created'
 

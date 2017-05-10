@@ -19,21 +19,21 @@
   <div class="card-group">
     <a href='categories/1' class="card">
     <!-- pull last or first items image from category -->
-      <img class="card-img-top" src="http://placehold.it/250x250" alt="Card image cap">
+      <%= image_tag @items.where('category_id = 1').last.image, :class => 'home-img-size' %>
       <div class="card-block">
         <h4 class="card-title">Shoes</h4>
       </div>
     </a>
-    <a href='categories/1' class="card">
+    <a href='categories/2' class="card">
     <!-- pull last or first items image from category -->
-      <img class="card-img-top" src="http://placehold.it/250x250" alt="Card image cap">
+      <%= image_tag @items.where('category_id = 2').last.image, :class => 'home-img-size' %>
       <div class="card-block">
         <h4 class="card-title">Balls</h4>
       </div>
     </a>
-    <a href='categories/2' class="card">
+    <a href='categories/3' class="card">
     <!-- pull last or first items image from category -->
-      <img class="card-img-top" src="http://placehold.it/250x250" alt="Card image cap">
+      <%= image_tag @items.where('category_id = 3').last.image, :class => 'home-img-size' %>
       <div class="card-block">
         <h4 class="card-title">Shorts</h4>
       </div>

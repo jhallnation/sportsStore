@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 .navbar{
   background-color: grey;
@@ -21,6 +22,7 @@
   width: 100%;
   padding: 10px;
 }
+
 .bread-crumb-links {
   display: inline-block;
   font-size: 35px;
@@ -37,3 +39,8 @@
   display: inline-block;
   font-size: 15px;
 }
+.home-img-size {
+  height: 250px;
+  width: 350px;
+}
+

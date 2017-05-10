@@ -3,14 +3,15 @@
 
 <div class="album text-muted">
   <div class="container">
+      <% if logged_in?(:admin) %>
+        <div><%= link_to 'Create new Item', new_item_path(@item) %></div>
+        <hr>
+      <% end %>
+      <%= paginate @items %>
+      <br>
     <div class="row">
-      
-        <%= render partial: 'item', collection: @items %>
-   
+      <%= render partial: 'item', collection: @items %>
     </div>
+      <%= paginate @items %>
   </div>
 </div> 
-<hr>
-<% if logged_in?(:admin) %>
-  <div><%= link_to 'Create new Item', new_item_path(@item) %></div>
-<% end %>

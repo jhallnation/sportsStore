@@ -5,7 +5,7 @@
 <div class="container">
   <div class="row">
     <div class='col-md-6'>
-      <%= image_tag item_img(@item.image, 'main') %>
+      <%= image_tag item_img(@item.image, 'main'), :class => 'home-img-size' %>
     </div>
 
     <div class='col-md-6'>
@@ -21,7 +21,7 @@
       <p>
         <%= link_to"BUY" %>
       </p>
-      
+
       <% if logged_in?(:admin) %>
       <hr>
         <div><%= link_to 'Edit', edit_item_path(@item) %></div>

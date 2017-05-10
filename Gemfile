@@ -41,6 +41,7 @@ gem 'petergate', '~> 1.7', '>= 1.7.3'
 gem 'j_hall_view_tool', git: 'https://github.com/jhallnation/j_hall_view_tool'
 gem 'carrierwave', '~> 1.0' 
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
