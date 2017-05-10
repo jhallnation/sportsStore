@@ -1,8 +1,6 @@
 <div class='col-md-4'>
   <div class="card">
     <%= image_tag item_img(item.thumb_image, 'thumb'), width: '100%' %>
-    <p><span><%= link_to item.title, item %></span>
-    <%= item.price %>
-    </p>
+    <div class='item-card'><%= link_to item.title, item %> / $<%= item.price %> / <%= link_to"BUY" %></div>
   </div>
 </div>

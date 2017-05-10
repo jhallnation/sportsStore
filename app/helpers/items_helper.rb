@@ -7,9 +7,9 @@ module ItemsHelper
     if img.model.image? || img.model.thumb_image?
       img
     elsif type == 'thumb'   
-      image_generator(height: '350', width: '200')
+      image_generator(height: '200', width: '150')
     elsif type == 'main'
-      image_generator(height: '600', width: '400')
+      image_generator(height: '350', width: '285')
     end
   end
 end

@@ -1,6 +1,5 @@
-<h1><%= @category.title %></h1>
-
-<h1>Items</h1>
+<div class='bread-crumb-links first-link'><%= link_to 'StepBack.com >', root_path %></div>
+<div class='bread-crumb-links last-link'><%= @category.title %></div>
 
 <div class="album text-muted">
   <div class="container">
@@ -11,3 +10,7 @@
     </div>
   </div>
 </div> 
+<hr>
+<% if logged_in?(:admin) %>
+  <div><%= link_to 'Create new Item', new_item_path(@item) %></div>
+<% end %>
